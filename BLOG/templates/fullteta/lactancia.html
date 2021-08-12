@@ -1,0 +1,19 @@
+{% extends "fullteta/layout.html" %}
+{% block content %}
+<div class="banner">
+  <p><strong>Lactancia y Alimentacion</strong></p>
+</div>
+<div class="container-card">
+  {% for un_producto in lista_principal %}
+  <div class="card" style="width: 18rem;">
+      <img src="{{un_producto.imagen}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{un_producto.titulo}}</h5>
+        <p class="card-text">{{un_producto.descripcion}}</p>
+        <a target="_blank" href="{{un_producto.link}}" class="btn btn-primary"><button class="car-button">Ver</button></a>
+      </div>
+  </div> 
+  {% endfor %}
+</div>
+      
+{% endblock %}

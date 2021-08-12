@@ -1,0 +1,48 @@
+{% extends "fullteta/layout.html" %}
+{% block content %}
+
+<div class="banner">
+  <p><strong>Tus resultados</strong></p>
+</div>
+<div class="container-card">
+  {% for p in producto %}
+  <div class="card" style="width: 18rem;">
+      <img src="{{p.imagen}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{p.titulo}}</h5>
+        <p class="card-text">{{p.descripcion}}</p>
+        <a target="_blank" href="{{p.link}}" class="btn btn-primary"><button class="car-button">Ver</button></a>
+      </div>
+  </div> 
+  {% endfor %}
+</div>
+
+<div class="container-card">
+    {% for p in salud1 %}
+    <div class="card" style="width: 18rem;">
+        <img src="{{p.imagen}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{p.titulo}}</h5>
+          <p class="card-text">{{p.descripcion}}</p>
+          <a target="_blank" href="{{p.link}}" class="btn btn-primary"><button class="car-button">Ver</button></a>
+        </div>
+    </div> 
+    {% endfor %}
+  </div>
+
+  <div class="container-card">
+    {% for p in motricidad1 %}
+    <div class="card" style="width: 18rem;">
+        <img src="{{p.imagen}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{p.titulo}}</h5>
+          <p class="card-text">{{p.descripcion}}</p>
+          <a target="_blank" href="{{p.link}}" class="btn btn-primary"><button class="car-button">Ver</button></a>
+        </div>
+    </div> 
+    {% endfor %}
+  </div>
+
+{% comment %} {% include 'busqueda.html' %} {% endcomment %}
+      
+{% endblock %}

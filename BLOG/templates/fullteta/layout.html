@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'estilos.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <title>Blog Fullteta</title>
+</head>
+<body>
+    <header class="header">
+         <img class="header__img" src="data:image/jpeg;base64,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" alt="logo-fullteta">
+        <nav class="header-nav">
+            <a href="{% url 'BLOG:index' %}"><button class="header-button">Home</button></a>
+            <a href="{% url 'BLOG:lactancia' %}"><button class="header-button">Lactancia y Alimentacion</button></a>
+            <a href="{% url 'BLOG:salud' %}"><button class="header-button">Salud</button></a>
+            <a href="{% url 'BLOG:motricidad' %}"><button class="header-button">Motricidad y Lenguaje</button></a>
+            <a href="{% url 'BLOG:rincon' %}"><button class="header-button">Nuestro Rincon</button></a> 
+        </nav>
+    </header>
+    <div class="container">
+
+        <form action="{% url 'BLOG:busqueda' %}" placeholder="buscar.." method="GET" class="search" >
+            {% csrf_token %}
+            <input name="q" type="search" placeholder="Cuentanos que buscas..." class="search-input">
+                        
+        </form>
+
+    </div>
+    {% block content %}
+    {% endblock %}
+    <footer>
+        <p>--Fullteta nuestra tribu virtual--instagram @fullteta <a target="_blank" href="https://www.instagram.com/fullteta/"><img src="https://img.icons8.com/officexs/16/000000/instagram-new.png"/></a>---</p>
+    </footer>
+</body>
+</html>

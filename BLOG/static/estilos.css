@@ -1,0 +1,95 @@
+body{
+    background-color: #2a9d8f;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+.header{
+   	height:100px;
+	width: 100%;
+    margin-right: 20px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.header-nav{
+    margin-top: 50px;
+}
+.header-button{
+    border-radius: 10px;
+    background-color: #f4a261;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+.search{
+    display: flex;
+    justify-content: center;
+}
+.search-input{
+    width: 70%;
+    height: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid white;
+    border-radius: 25px;
+    color: white;
+    padding: 0px 20px;
+}
+.banner{
+    background-color: #e9c46a;
+    height: 40px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: black;
+}
+p{
+   padding: 10px;
+}
+.header__img{
+    border-radius: 50%;
+    width: 140px;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+.card{
+    border: 2px solid white;
+    border-radius: 10px;
+    margin-left: 10px;
+
+}
+.car-button{
+    border-radius: 10px;
+    background-color: #f4a261;
+    padding: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+.card-img-top{
+    width: 18rem;
+    border-start-start-radius: 10px;
+    border-start-end-radius: 10px;
+}
+.card-title{
+    color:black;
+    font-size: 20px;
+    margin: 2px;
+}
+.section-index{
+background-color: white;
+color: #2a9d8f;
+display: flex;
+}
+.section-index-p{
+    font-size: 20px;
+}
+.index-img{
+    width: 60%;
+}
+.container-card{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}

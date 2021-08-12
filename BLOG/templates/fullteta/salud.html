@@ -1,0 +1,19 @@
+{% extends "fullteta/layout.html" %}
+{% block content %}
+<div class="banner">
+  <p><strong>Salud</strong></p>
+</div>
+<div class="container-card">
+  {% for un_salud in lista_salud %}
+  <div class="card" style="width: 18rem;">
+      <img src="{{un_salud.imagen}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{un_salud.titulo}}</h5>
+        <p class="card-text">{{un_salud.descripcion}}</p>
+        <a target="_blank" href="{{un_salud.link}}" class="btn btn-primary"><button class="car-button">Ver</button></a>
+      </div>
+  </div> 
+  {% endfor %}
+</div>
+      
+{% endblock %}
