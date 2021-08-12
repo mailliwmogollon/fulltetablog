@@ -1,0 +1,2 @@
+# fullteta
+# fulltetablog
